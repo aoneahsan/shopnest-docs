@@ -1,0 +1,54 @@
+# ShopNest — Documentation Index
+
+> ShopNest is a modern, free e-commerce platform. Shoppers browse a product catalog with instant search, filters, and side-by-side comparison; add items to a persistent cart; move through a guided shipping → payment → review checkout; and track every order. It adds accounts (Google, Apple, email, plus biometric re-login), wishlists, a tiered loyalty program, product reviews, a blog, six-language localization, PWA install, and an admin dashboard for store owners. Available free on the web at https://shopnest.aoneahsan.com (Android and iOS in progress). Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+ShopNest is built with React, TypeScript, Vite, TanStack Router/Query, Radix UI + Tailwind, Zustand, and Capacitor, on top of Firebase/Firestore for data and authentication. Payments run through Stripe and PayPal; file uploads use FilesHub (not Firebase Storage). Most of the storefront — search, filtering, comparison, cart, and invoice generation — runs client-side in the browser. The app is free to use and shows only first-party promotions for the developer's other apps (no third-party ad networks).
+
+This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a structured index for large language models.
+
+## Getting Started
+
+- [Introduction](https://shopnest-docs.aoneahsan.com/intro): What ShopNest is, who it's for, and how the storefront fits together.
+- [Quick Start](https://shopnest-docs.aoneahsan.com/getting-started/quick-start): From landing page to first order in a few steps.
+- [Create Your Account](https://shopnest-docs.aoneahsan.com/getting-started/create-your-account): Sign up with Google, Apple, or email and set up your profile.
+- [Browse & Buy](https://shopnest-docs.aoneahsan.com/getting-started/browse-and-buy): Find products, add to cart, and check out.
+
+## Features
+
+- [Product Catalog](https://shopnest-docs.aoneahsan.com/features/product-catalog): Categories, product detail pages, images, specs, and pricing.
+- [Search & Filters](https://shopnest-docs.aoneahsan.com/features/search-and-filters): Instant search, faceted filters, quick view, and product comparison.
+- [Cart & Checkout](https://shopnest-docs.aoneahsan.com/features/cart-and-checkout): Persistent cart, coupons, and a multi-step checkout.
+- [Payments & Invoices](https://shopnest-docs.aoneahsan.com/features/payments-and-invoices): Stripe and PayPal, plus downloadable PDF invoices.
+- [Accounts & Sign-In](https://shopnest-docs.aoneahsan.com/features/accounts-and-auth): Google, Apple, email, biometric re-login, addresses, and security.
+- [Orders & Tracking](https://shopnest-docs.aoneahsan.com/features/orders-and-tracking): Order history, statuses, and the track-order page.
+- [Wishlist](https://shopnest-docs.aoneahsan.com/features/wishlist): Save products and move them into the cart.
+- [Loyalty Program](https://shopnest-docs.aoneahsan.com/features/loyalty): Points, tiers, rewards, and referrals.
+- [Reviews](https://shopnest-docs.aoneahsan.com/features/reviews): Product ratings and written reviews.
+- [Blog](https://shopnest-docs.aoneahsan.com/features/blog): Articles and buying guides with rich content.
+- [Admin Dashboard](https://shopnest-docs.aoneahsan.com/features/admin-dashboard): Manage products, orders, users, content, and analytics.
+- [Internationalization](https://shopnest-docs.aoneahsan.com/features/internationalization): Six languages, including right-to-left Arabic.
+- [PWA & Notifications](https://shopnest-docs.aoneahsan.com/features/pwa-and-notifications): Install the app and receive push notifications.
+- [Browser Extension](https://shopnest-docs.aoneahsan.com/features/browser-extension): A companion shopping-assistant extension.
+
+## Guides
+
+- [Place an order](https://shopnest-docs.aoneahsan.com/guides/place-an-order)
+- [Track an order](https://shopnest-docs.aoneahsan.com/guides/track-an-order)
+- [Manage your account](https://shopnest-docs.aoneahsan.com/guides/manage-your-account)
+- [Export or delete your data](https://shopnest-docs.aoneahsan.com/guides/data-export-and-deletion)
+
+## Reference
+
+- [FAQ](https://shopnest-docs.aoneahsan.com/faq): Common questions about accounts, orders, payments, and privacy.
+- [Privacy](https://shopnest-docs.aoneahsan.com/privacy): What data ShopNest collects, how it's used, and your rights.
+- [Changelog](https://shopnest-docs.aoneahsan.com/changelog): Release history.
+- [About the Author](https://shopnest-docs.aoneahsan.com/about-the-author): Ahsan Mahmood, the developer behind ShopNest.
+
+## Links
+
+- App (web): https://shopnest.aoneahsan.com
+- Docs: https://shopnest-docs.aoneahsan.com
+- Author: https://aoneahsan.com
+- GitHub: https://github.com/aoneahsan

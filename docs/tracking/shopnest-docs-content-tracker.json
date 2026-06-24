@@ -1,0 +1,97 @@
+{
+  "$schema": "shopnest-docs-content-tracker",
+  "description": "Resumable per-page content tracker for the ShopNest docs site. Baseline pages documenting every shipped feature are complete; long-tail deep-enrichment batches are listed below.",
+  "site": "shopnest-docs",
+  "repo": "github.com/aoneahsan/shopnest-docs (PUBLIC)",
+  "createdAt": "2026-06-24",
+  "lastUpdated": "2026-06-24",
+  "baselineComplete": true,
+  "totalBaselinePages": 26,
+  "wordsPerPageTarget": "400-700 (baseline); 1000+ on enrichment",
+  "expert": "Ahsan Mahmood",
+  "seoFloor": {
+    "uniqueTitle": "50-60 chars",
+    "uniqueDescription": "140-160 chars",
+    "definitionFirstIntro": true,
+    "h2Sections": "3-6",
+    "faqBlock": "feature + guide pages",
+    "authorCredit": true,
+    "jsonLd": "WebSite + Organization + SoftwareApplication (site-wide via docusaurus.config headTags)",
+    "robotsAiAllowlist": true,
+    "llmsTxt": true
+  },
+  "baselinePages": [
+    "intro",
+    "getting-started/quick-start",
+    "getting-started/create-your-account",
+    "getting-started/browse-and-buy",
+    "features/product-catalog",
+    "features/search-and-filters",
+    "features/cart-and-checkout",
+    "features/payments-and-invoices",
+    "features/accounts-and-auth",
+    "features/orders-and-tracking",
+    "features/wishlist",
+    "features/loyalty",
+    "features/reviews",
+    "features/blog",
+    "features/admin-dashboard",
+    "features/internationalization",
+    "features/pwa-and-notifications",
+    "features/browser-extension",
+    "guides/place-an-order",
+    "guides/track-an-order",
+    "guides/manage-your-account",
+    "guides/data-export-and-deletion",
+    "faq",
+    "privacy",
+    "changelog",
+    "about-the-author"
+  ],
+  "enrichmentBacklog": [
+    {
+      "id": "batch-01",
+      "status": "pending",
+      "category": "checkout-and-payments-deep-dives",
+      "rationale": "Split payments/checkout into per-method guides (pay with Stripe, pay with PayPal, apply a coupon, fix a failed payment) each with 1000+ words, screenshots, and FAQ.",
+      "candidatePages": [
+        "guides/pay-with-stripe",
+        "guides/pay-with-paypal",
+        "guides/apply-a-coupon",
+        "guides/download-your-invoice"
+      ]
+    },
+    {
+      "id": "batch-02",
+      "status": "pending",
+      "category": "store-owner-admin-guides",
+      "rationale": "admin-dashboard.md is one overview; split into per-task guides (add a product, fulfill an order, moderate reviews, publish a blog post, read analytics).",
+      "candidatePages": [
+        "guides/add-a-product",
+        "guides/fulfill-an-order",
+        "guides/moderate-reviews",
+        "guides/publish-a-blog-post"
+      ]
+    },
+    {
+      "id": "batch-03",
+      "status": "pending",
+      "category": "discovery-and-comparison-guides",
+      "rationale": "Expand search/filter/comparison into how-to guides (compare two products, save a wishlist, use quick view) and category landing explainers.",
+      "candidatePages": [
+        "guides/compare-products",
+        "guides/use-quick-view",
+        "guides/build-a-wishlist"
+      ]
+    }
+  ],
+  "workflow": [
+    "Read this tracker.",
+    "Pick the first pending batch.",
+    "Confirm the candidate pages map to real app features (no fabrication).",
+    "Write each page to the SEO floor; wire into sidebars.ts.",
+    "yarn typecheck + yarn build clean.",
+    "Update this tracker; ONE commit per batch."
+  ],
+  "resumeInstructions": "Baseline is shipped. To deep-enrich, take the first 'pending' batch in enrichmentBacklog, write its pages to the SEO floor, add them to sidebars.ts, verify the build, mark the batch complete, and commit."
+}

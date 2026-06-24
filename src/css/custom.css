@@ -1,0 +1,81 @@
+/**
+ * ShopNest — brand palette
+ * Primary: Indigo 600 (#4f46e5) — primary CTAs, links
+ * Secondary: Violet 600 (#7c3aed) — accents, the brand gradient end stop
+ */
+
+:root {
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #3f37cf;
+  --ifm-color-primary-darker: #3b34c4;
+  --ifm-color-primary-darkest: #312aa2;
+  --ifm-color-primary-light: #6259e9;
+  --ifm-color-primary-lighter: #6c63ea;
+  --ifm-color-primary-lightest: #8a83ee;
+
+  --ifm-color-secondary: #7c3aed;
+  --ifm-color-success: #16a34a;
+  --ifm-color-info: #4f46e5;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  --docusaurus-highlighted-code-line-bg: rgba(79, 70, 229, 0.10);
+
+  /* Soft accent surfaces used by callouts + hero strips */
+  --sn-surface-brand: rgba(79, 70, 229, 0.06);
+  --sn-surface-accent: rgba(124, 58, 237, 0.06);
+}
+
+/* Dark mode — keep the brand recognisable, raise contrast */
+[data-theme='dark'] {
+  --ifm-color-primary: #a5b4fc;
+  --ifm-color-primary-dark: #8b9bfb;
+  --ifm-color-primary-darker: #7e8ffa;
+  --ifm-color-primary-darkest: #586bf7;
+  --ifm-color-primary-light: #bfcdfd;
+  --ifm-color-primary-lighter: #ccd6fe;
+  --ifm-color-primary-lightest: #e0e7ff;
+
+  --ifm-color-secondary: #c4b5fd;
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #111a2c;
+
+  --docusaurus-highlighted-code-line-bg: rgba(165, 180, 252, 0.18);
+}
+
+/* Subtle entrance animation (CSS-only, respects reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .markdown > h1,
+  .markdown > h2 {
+    animation: sn-fade-up 420ms ease-out both;
+  }
+  @keyframes sn-fade-up {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+.theme-code-block {
+  border-radius: 10px;
+}
+
+/* Author callout used on the about-the-author page (no extra component needed) */
+.sn-author-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: var(--sn-surface-brand);
+  margin: 1.5rem 0;
+}
+
+.sn-author-card a {
+  font-weight: 600;
+}

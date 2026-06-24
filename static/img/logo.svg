@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <rect x="0" y="5" width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+  <path d="M12 17.5c0-3.59 2.91-6.5 6.5-6.5h3c3.59 0 6.5 2.91 6.5 6.5V19h1.5c.83 0 1.5.67 1.5 1.5v10c0 1.38-1.12 2.5-2.5 2.5h-13c-1.38 0-2.5-1.12-2.5-2.5v-10c0-.83.67-1.5 1.5-1.5H14v-1.5zM16 19h8v-1.5c0-1.38-1.12-2.5-2.5-2.5h-3c-1.38 0-2.5 1.12-2.5 2.5V19z" fill="white" transform="translate(2, 2)"/>
+  <!-- Nest circles -->
+  <circle cx="22" cy="30" r="4" fill="none" stroke="white" stroke-width="1.2"/>
+  <circle cx="22" cy="30" r="1.5" fill="white"/>
+
+  <!-- Text -->
+  <text x="52" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#1f2937" font-weight="700">ShopNest</text>
+</svg>

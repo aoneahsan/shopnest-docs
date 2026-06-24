@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "shopnest-docs"
+  },
+  "targets": {
+    "shopnest-docs": {
+      "hosting": {
+        "shopnest-docs": ["shopnest-docs"]
+      }
+    }
+  },
+  "etags": {}
+}
