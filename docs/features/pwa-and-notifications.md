@@ -15,7 +15,7 @@ Because ShopNest is a PWA with a web manifest and service worker, supported brow
 
 ## Push notifications
 
-ShopNest supports push notifications so the store can reach you about relevant updates. On **mobile (Capacitor)** the app uses native push notifications. On the **web**, notifications use the Firebase Cloud Messaging web flow with a registered service worker; this requires your browser's notification permission and a configured Web Push key, and it degrades gracefully when those aren't present.
+ShopNest uses OneSignal for push notifications on the web and in its Capacitor apps. Web push uses a separate OneSignal service worker under `/push/onesignal/`, alongside the app's PWA service worker. Push is available only when the app has a OneSignal App ID, the device supports it, and you grant notification permission.
 
 ## Offline-aware behavior
 
@@ -29,7 +29,7 @@ No. Installation is optional. The full storefront runs in any modern browser; in
 
 ### How do push notifications work on the web?
 
-Through Firebase Cloud Messaging with a registered service worker. You grant notification permission, and the store can then send you web push messages. Without permission or configuration, web push simply stays off.
+Through OneSignal and its scoped service worker. You choose whether to grant notification permission. If OneSignal is not configured or your browser does not support push, the push control stays unavailable.
 
 ### Does the app work offline?
 

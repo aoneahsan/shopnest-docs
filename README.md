@@ -9,7 +9,8 @@ Public documentation site for **ShopNest** — a modern, free e-commerce platfor
 
 Built with [Docusaurus 3](https://docusaurus.io). The site documents every shipped area of ShopNest: catalog, search & filters, cart & checkout, payments & invoices, accounts, orders & tracking, wishlist, loyalty, reviews, blog, admin dashboard, internationalization, PWA & notifications, and the browser extension.
 
-## Local development
+<a id="local-development"></a>
+## 🛠️ Local development&nbsp;[#](#local-development)
 
 ```bash
 yarn install
@@ -19,25 +20,26 @@ yarn serve          # serve the production build on port 5929
 yarn typecheck      # tsc --noEmit
 ```
 
-## Hosting (dual)
+<a id="hosting"></a>
+## 🚀 Hosting&nbsp;[#](#hosting)
 
-This PUBLIC site is dual-hosted; both deploys are **user-only** actions:
+The public docs repository deploys to GitHub Pages on every push to `main` through `.github/workflows/deploy-pages.yml`. The custom domain is carried by `static/CNAME`. Check the fresh production build in a controlled browser before pushing.
 
-- **Firebase Hosting** — `yarn firebase:deploy` (site target `shopnest-docs`; config in `firebase.json` + `.firebaserc`).
-- **GitHub Pages** — `.github/workflows/deploy-pages.yml` builds and publishes on every push to `main`. Custom domain `shopnest-docs.aoneahsan.com` via `static/CNAME`. Enable once in repo **Settings → Pages → Source: GitHub Actions**.
-
-## SEO / AEO
+<a id="seo-aeo"></a>
+## 🔎 SEO / AEO&nbsp;[#](#seo-aeo)
 
 - `static/robots.txt` allows all major search + AI/answer-engine bots and links the sitemap.
 - `sitemap.xml` is generated on build by the Docusaurus sitemap plugin.
 - `static/llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec.
 - JSON-LD (`WebSite`, `Organization`, `SoftwareApplication`) + per-page meta/OG are emitted from `docusaurus.config.ts`.
 
-## Content enrichment
+<a id="content-enrichment"></a>
+## 📚 Content enrichment&nbsp;[#](#content-enrichment)
 
 Baseline pages are complete. Long-tail deep-dive batches are tracked in
 `docs/tracking/shopnest-docs-content-tracker.json` (resumable, one commit per batch).
 
-## License
+<a id="license"></a>
+## 📄 License&nbsp;[#](#license)
 
 MIT © Ahsan Mahmood. ShopNest is free to use.

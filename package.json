@@ -2,7 +2,7 @@
   "name": "shopnest-docs",
   "version": "0.1.0",
   "private": true,
-  "description": "Public documentation site for ShopNest — a modern e-commerce platform (https://shopnest.aoneahsan.com). Built with Docusaurus, deployed to Firebase Hosting + GitHub Pages.",
+  "description": "Public documentation site for ShopNest — a modern e-commerce platform (https://shopnest.aoneahsan.com). Built with Docusaurus and deployed to GitHub Pages.",
   "author": {
     "name": "Ahsan Mahmood",
     "email": "aoneahsan@gmail.com",

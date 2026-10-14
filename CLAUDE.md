@@ -1,7 +1,15 @@
 # CLAUDE.md — ShopNest Docs
 
+| Context | Value |
+|---|---|
+| Last optimized | 2026-10-14 |
+| Next routine optimization eligible | 2026-11-13 |
+| Guide bytes | 4351 B |
+
 Public documentation site for ShopNest (the e-commerce platform app at
 `../shopnest`, repo `github.com/aoneahsan/ecommerce-platform`).
+
+**Context coverage:** Docs-site root, Docusaurus config, `docs/`, `static/` and the Pages workflow. Next routine context audit: 2026-11-13.
 
 ## Identity
 
@@ -20,12 +28,11 @@ Public documentation site for ShopNest (the e-commerce platform app at
 This is a PUBLIC repo. Never commit `.env` or any secret. Only `.env.example`
 if ever needed. `.gitignore` already excludes env/secret files.
 
-## Hosting (dual; deploys are USER-ONLY)
+## Hosting
 
-- **Firebase Hosting**: `yarn firebase:deploy` (target `shopnest-docs`; `firebase.json` + `.firebaserc`).
 - **GitHub Pages**: `.github/workflows/deploy-pages.yml` on push to `main`; custom domain via `static/CNAME`. Enable Pages once in repo Settings → Pages → Source: GitHub Actions.
 
-The agent writes config; the user runs the deploys.
+A push to `main` runs the Pages workflow and publishes after its build passes. Verify a fresh local production build in a controlled browser before pushing.
 
 ## Content rules
 
@@ -46,11 +53,11 @@ yarn start      # dev server (port 5928) — do NOT run in CI/agent
 
 ## Verify gate
 
-`yarn build` must exit clean (it generates the sitemap + static HTML). Do not run dev servers.
+`yarn build` must exit clean (it generates the sitemap + static HTML). Serve the exact fresh production build for a controlled browser check before a deploying push.
 
 ---
 
-**Last Updated**: 2026-06-24
+**Last Updated**: 2026-10-14
 
 
 ## Sub-agents & Skills — Main-Context-First (IRON-SOLID)
